@@ -1,6 +1,8 @@
 export function toRoman(aNumber: number): String {
-    if (aNumber > 1) {
-        return "II";
+    let romanNumber: String = "";
+    while (aNumber > 0) {
+        aNumber --;
+        romanNumber += "I";
     }
-    return "I";
+    return romanNumber;
 }
