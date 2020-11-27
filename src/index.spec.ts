@@ -1,8 +1,8 @@
-import { sum } from './index';
+import { toRoman } from './index';
 import { expect } from 'chai';
 
-describe('sample test-suite', () => {
-    it('sum 1 + 3 should be 4', () => {
-        expect(sum(1, 3)).eql(4);
+describe('Convert to roman', () => {
+    it('one should be one', () => {
+        expect(toRoman(1)).eql(1);
     });
 });
